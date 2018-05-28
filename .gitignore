@@ -1,0 +1,12 @@
+# Mac OS
+.DS_Store
+
+# Node
+node_modules
+
+# Editors
+.atom
+.vscode
+
+# Logs
+*.log
