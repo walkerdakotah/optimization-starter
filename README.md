@@ -20,7 +20,13 @@ __The Solution:__ This package aims to alleviate some of our pain points by esta
 		optimization.js
 ```
 
-###Gulp File Checklist:
+##Setup Checklist:
+
+- [Gulp](#gulp)
+- [Optimization Styles](#optimization-syles)
+- [Optimization JavaScript](#optimization-javascript)
+
+### Gulp
 
 From inside `wp-content/themes/[facility]/gulpfile.js`:
 
@@ -41,13 +47,7 @@ From inside `wp-content/themes/[facility]/gulpfile.js`:
 	];
 	```
 
-3. Import the newly created `_optimization.scss` file in the `style.scss` file found in the facility theme root `[facility]/style.scss (e.g.) Greenhouse/style.scss`
-
-	```
-	@import "./optimization/optimization";
-	```
-
-4. Include the new `optimization.js` file in the `jsCustomSRC` file array and `customJSWatchFiles` array:
+3. Include the new `optimization.js` file in the `jsCustomSRC` file array and `customJSWatchFiles` array:
 
 	```
 	var jsCustomSRC = [
@@ -62,4 +62,24 @@ From inside `wp-content/themes/[facility]/gulpfile.js`:
 		'../AAC-Facilities-Parent/components/scripts/*.js',
 		'./optimization/*.js',
 	];
+	```
+
+### Optimization Styles
+
+From inside `wp-content/themes/[facility]/style.scss`:
+
+1. Import the newly created `_optimization.scss` file:
+
+	```
+	@import "./optimization/optimization";
+	```
+
+### Optimization JavaScript
+
+From inside `wp-content/themes/[facility]/includes/footer-scripts.php`:
+
+1. Include a script tag pointing to the newly created `optimization.js` file:
+
+	```
+	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory');?>/optimization/optimization.js"></script>
 	```

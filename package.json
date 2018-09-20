@@ -2,22 +2,12 @@
   "name": "optimization-starter",
   "version": "1.0.0",
   "description": "A starter package for setting up your CRO local development.",
-  "main": "app.js",
-  "scripts": {
-    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
-  },
+  "scripts": {},
   "keywords": [
     "Optimization",
     "CRO"
   ],
   "author": "Dakotah Walker",
   "license": "MIT",
-  "devDependencies": {
-    "browser-sync": "^2.24.4",
-    "browser-sync-webpack-plugin": "^2.2.2",
-    "laravel-mix": "^2.1.11"
-  }
+  "devDependencies": {}
 }
