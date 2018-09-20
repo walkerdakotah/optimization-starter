@@ -4,6 +4,11 @@ __The Problem:__ We launch many conversion rate optimization (CRO) experiments a
 
 __The Solution:__ This package aims to alleviate some of our pain points by establishing a simple boilerplate within the facility theme, as well as some guidelines on how to connect it to the pre-existing Gulp build process with minimal configuration.
 
+## Install
+```
+	git clone https://github.com/American-Addiction-Centers/optimization-starter.git optimization
+```
+
 ##Project Structure
 
 ```
